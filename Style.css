@@ -1,0 +1,465 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f37520;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #f37520;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* Burger menu active state */
+.navbar.active .nav-links {
+    display: block;
+}
+
+.responsive-div {
+    background-color: #f3da20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 200px;
+
+}
+
+/* Styles for mobile phones (up to 600px) */
+@media (max-width: 600px) {
+    .responsive-div {
+        font-size: 14px;
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+/* Styles for tablets (601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .responsive-div {
+        font-size: 16px;
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+/* Styles for laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .responsive-div {
+        font-size: 18px;
+        padding: 20px;
+        margin: 15px;
+    }
+}
+
+/* Styles for desktops (1025px and up) */
+@media (min-width: 1025px) {
+    .responsive-div {
+        font-size: 20px;
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsive layout for laptops and desktops */
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+#responsive-div-Foods {
+    background-color: #f3da20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+
+/* Styles for mobile phones (up to 600px) */
+@media (max-width: 600px) {
+    #responsive-div-Foods {
+        font-size: 14px;
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+/* Styles for tablets (601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #responsive-div-Foods {
+        font-size: 16px;
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+/* Styles for laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #responsive-div-Foods {
+        font-size: 18px;
+        padding: 20px;
+        margin: 15px;
+    }
+}
+
+/* Styles for desktops (1025px and up) */
+@media (min-width: 1025px) {
+    #responsive-div-Foods {
+        font-size: 20px;
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.add-to-cart {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.responsive-Btn-Flow {
+    background-color: white;
+    height: 75px;
+    padding: 20px;
+    margin-top: 100px;
+    margin: 10px;
+
+
+}
+
+/* Styles for mobile phones (up to 600px) */
+@media (max-width: 600px) {
+    .responsive-Btn-Flow {
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+/* Styles for tablets (601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .responsive-Btn-Flow {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+/* Styles for laptops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .responsive-Btn-Flow {
+        padding: 20px;
+        margin: 15px;
+    }
+}
+
+/* Styles for desktops (1025px and up) */
+@media (min-width: 1025px) {
+    .responsive-Btn-Flow {
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+.btn-flow {
+    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+#Btn-Menu {
+    background-color: #f37520;
+    border-radius: 20px;
+    width: 100px;
+    border: none;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 15px;
+    height: 50px;
+    box-shadow: 0px 0px 3px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa-circle {
+    color: orangered;
+}
+
+.searchBar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.glass:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands {
+    font-size: 25px;
+    margin: 0 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    color: orangered;
+}
+
+.data {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 3px;
+    height: 92vh;
+    overflow-y: auto;
+}
+
+.top {
+    height: 60px;
+    border-radius: 3px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header {
+    height: 200px;
+    border-radius: 3px;
+    background-color: #333;
+    margin: 3vh 0px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+#root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.box {
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.img-box {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+
+h2 {
+    font-size: 20px;
+    color: orangered;
+}
+
+button {
+    width: 150px;
+    height: 10px;
+    position: relative;
+    border: none;
+    background-color: #f37520;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .col {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Responsive layout for laptops and desktops */
+@media (min-width: 992px) {
+    .col {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
+
